@@ -1,0 +1,14 @@
+package com.example.exception;
+
+public class MyClass2 {
+
+	MyClass1 myClass=new MyClass1();
+	
+	public void mainFun(){
+	
+		myClass.fun(4);
+	}
+	
+	
+	
+}

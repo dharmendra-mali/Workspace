@@ -1,0 +1,11 @@
+package withoutnewkeyword;
+
+public class EXampleImotable {
+
+	public  EXampleImotable() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}
+
+ 

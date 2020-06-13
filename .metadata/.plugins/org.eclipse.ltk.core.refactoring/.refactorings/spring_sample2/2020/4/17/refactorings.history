@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;test1.clinet.main().ab&apos; in &apos;test1.clinet.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;spring_sample2&apos;&#x0D;&#x0A;- Original element: &apos;test1.clinet.main().ab&apos;&#x0D;&#x0A;- Field name: &apos;ab&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;ab&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;test1{clinet.java" name="ab" selection="268 61" stamp="1587487536582" static="true" version="1.0" visibility="2"/>
+</session>

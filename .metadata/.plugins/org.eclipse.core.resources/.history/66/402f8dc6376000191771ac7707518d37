@@ -1,0 +1,18 @@
+package data_structure;
+
+import java.util.Stack;
+
+public class ArrayButy {
+
+	public static void main(String[] args) {
+		
+		int [] x=new int [10];
+		System.out.println(x.length);
+		
+		
+Stack<Integer> s1=new Stack<Integer>();
+s1.push(1);
+s1.pop()
+	}
+
+}

@@ -1,0 +1,38 @@
+package lembda_expration;
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class StreemClass {
+
+	public static void main(String[] args) {
+
+		Predicate<Integer> p = i -> i % 2 == 0;
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i <= 50; i++) {
+
+			list.add(i);
+		}
+
+		Stream<Integer> s = list.stream();
+		// ArrayList<Integer> demoList = (ArrayList<Integer>)
+		// s.filter(p).collect(Collectors.toList());
+
+		ArrayList<Integer> demoList2 = (ArrayList<Integer>) s.map(i -> i * 2).collect(Collectors.toList());
+
+		for (int i : demoList2) {
+
+			System.out.print(" " + i);
+
+		}
+
+		System.out.println();
+
+		
+		demoList2.forEach(l->System.out.print(""+l));
+	}
+
+}

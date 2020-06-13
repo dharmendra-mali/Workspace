@@ -1,0 +1,17 @@
+package data_structure;
+
+import java.util.Scanner;
+
+public class DemoArray {
+
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.java.CallUserApi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CallUserApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CallUserApiApplication.class, args);
+	}
+
+}

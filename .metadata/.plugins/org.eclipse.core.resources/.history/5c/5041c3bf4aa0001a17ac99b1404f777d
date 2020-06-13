@@ -1,0 +1,14 @@
+package withoutnewkeyword;
+
+public class Myclass implements Cloneable{
+	
+	public Myclass() {
+		System.out.println("constructor is called");
+	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		
+		return super.clone();
+	}
+}

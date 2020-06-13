@@ -1,0 +1,15 @@
+package Perentchiled;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+   //Alpha a=new Beta();
+   
+   //a.alphFun();
+     Beta b=new Beta();
+     b.alphFun();
+		
+	}
+
+}

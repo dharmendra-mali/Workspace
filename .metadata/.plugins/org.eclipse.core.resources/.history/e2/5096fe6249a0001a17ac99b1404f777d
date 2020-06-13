@@ -1,0 +1,11 @@
+package withoutnewkeyword;
+
+public class Example {
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Class c=Myclass.class;
+        Myclass myclass= (Myclass) c.newInstance();
+		//Myclass myclass = new Myclass();
+	}
+
+}

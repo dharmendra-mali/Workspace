@@ -1,0 +1,111 @@
+package Randoms;
+
+public class Solutions {
+	
+	static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
+	       
+	      int count =0;
+	      int count1=0;
+	      for(int i=0;i<apples.length;i++){
+	    	  System.out.print(apples[i]+a+" ");
+	          if(s<=(apples[i]+a)&&(apples[i]+a)<=t){
+	              
+	        	  count++;
+	          }
+	      }
+	          
+	      for(int i=0;i<oranges.length;i++){
+	          if(s<=(apples[i]+b)&&(apples[i]+b)<=t){
+	              count1++;
+	          }
+	      }System.out.println();
+	      System.out.println(count);
+	      System.out.println(count1);
+	   
+	    }
+	
+	public static int[] climbingLeaderboard(int[] scores, int[] alice) {
+        
+		
+		 int last=0;  
+         int [] newArray=new int [alice.length];
+         int newScores[]=new int [scores.length];
+         for(int j=0,i=0;j<scores.length;j++){
+        	      
+        	 if(last!=scores[j]){
+                        newScores[i]=scores[j];
+                        
+                        last=scores[j];
+                        i++;
+                    }                           
+                   
+         }
+         System.out.println();
+         for(int j=0;j<alice.length;j++){
+              int next=1;
+         for(int i=0;i<newScores.length;i++){
+              if(newScores[i]<=alice[j]){
+                  newArray[j]=next;
+                  break;
+              }
+               next++;
+         
+         
+         }
+         if(alice[j]<newScores[newScores.length-1]){
+             newArray[j]=next;
+         }
+         }
+
+return newArray;
+
+}
+	static int[] circularArrayRotation(int[] a, int k, int[] queries) {
+        int [] x=new int [queries.length];
+         int s;
+         int j;
+          for(int i=0;i<k;i++){
+              s=a[a.length-1];
+              
+          for( j=a.length-1;j>0;j--){
+              a[j]=a[j-1];
+              
+             
+
+          }    
+            a[j]=s;
+            
+          }
+          
+         for(int i=0;i<queries.length;i++){
+             x[i]=a[queries[i]];
+
+         }
+      return x;
+
+   }
+	public static void main(String[] args) {
+		
+		int s1[]={100,100,50,40,40,20,10};
+		int a1[]={5,25,50,120};
+		int r1[]=climbingLeaderboard(s1, a1);
+		int s=7;
+		int t=11;
+		int a=5;
+		int b=15;
+		int apples[]={-2,2,1};
+		int oranges[]={5,-6};
+		int [] q={1,2,3};
+		int k=2;
+		int [] qq={0,1,2};
+		
+	//	countApplesAndOranges(s, t, a, b, apples, oranges);
+		
+		int [] w =circularArrayRotation(q,k,qq);
+		for(int i=0;i<w.length;i++){
+			System.out.print(w[i]+" ");
+		}
+		System.out.println(6%4);
+	}
+
+}

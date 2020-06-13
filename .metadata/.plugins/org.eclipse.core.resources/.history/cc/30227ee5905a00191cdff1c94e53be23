@@ -1,0 +1,27 @@
+package data_structure;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class DemoArray {
+
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) throws IOException {
+
+		FileReader fr = new FileReader("D:\\ws\\abc.txt.txt");
+
+		BufferedReader br = new BufferedReader(fr);
+
+		String line = br.readLine();
+
+		
+
+		System.out.println(line);
+
+		br.close();
+	}
+
+}

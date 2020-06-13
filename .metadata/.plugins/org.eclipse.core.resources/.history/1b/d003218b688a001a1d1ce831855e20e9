@@ -1,0 +1,62 @@
+package com.company.spring.demo.services;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.company.spring.demo.dto.UserDto;
+import com.company.spring.demo.exception.UserNotFoundException;
+import com.company.spring.demo.models.User;
+import com.company.spring.demo.repositories.UserRepositories;
+
+@Service
+public class UserServiceImp implements UserService {
+
+	@Autowired
+	private UserRepositories userRepositories;
+
+	@Autowired
+	private ConverterService converterService;
+
+	public List<UserDto> getAllUser() {
+		List<User> allUsers = userRepositories.findAll();
+		return allUsers.stream().map(converterService::convertToDto).collect(Collectors.toList());
+	}
+
+	public UserDto createUser(User user) {
+		User tempUser = userRepositories.save(user);
+		return converterService.convertToDto(tempUser);
+	}
+
+	public UserDto getUserById(long userId) {
+		User tempUser = userRepositories.findById(userId).orElse(null);
+		if (tempUser == null) {
+			throw new UserNotFoundException("user id " + userId + " is not found");
+		}
+		return converterService.convertToDto(tempUser);
+	}
+
+	public UserDto updateUser(User user, long userId) {
+
+		user.setUserId(userId);
+		User tempUser = userRepositories.save(user);
+		return converterService.convertToDto(tempUser);
+
+	}
+
+	public void deleteUser(long userId) {
+		userRepositories.deleteById(userId);
+	}
+
+	public User findOne(long userId) {
+		return userRepositories.findById(userId).orElse(null);
+	}
+
+	public User findByName(String name) {
+
+		return userRepositories.getUserFirstNamesLike(name);
+	}
+
+}

@@ -1,0 +1,73 @@
+package data_structure;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class DemoArray {
+
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) throws IOException {
+
+		FileReader fr = new FileReader("D:\\ws\\abc.txt.txt");
+		FileWriter fw = new FileWriter("D:\\ws\\abc.txt");
+		BufferedReader br = new BufferedReader(fr);
+		BufferedWriter bw = new BufferedWriter(fw);
+		String line = br.readLine();
+
+		int[] array = new int[(line.length() / 2) + 1];
+		int[][] arrayf = new int[(line.length() / 2) + 1][2];
+
+		String[] arr = line.split(" ");
+
+		for (int i = 0; i < arr.length; i++) {
+
+			array[i] = Integer.valueOf(arr[i]);
+
+		}
+
+		for (int i = 0; i < array.length; i++) {
+
+			arrayf[array[i]][0]++;
+			arrayf[array[i]][1] = array[i];
+
+		}
+
+		bw.write(arr[0]);
+
+		/*
+		 * for (int i = 0; i < array.length-1; i++) {
+		 * 
+		 * if (arrayf[i][0] < arrayf[i+1][0]) {
+		 * 
+		 * int j = arrayf[i][0]; int k = arrayf[i][1];
+		 * 
+		 * arrayf[i][0]=arrayf[i+1][0]; arrayf[i][1]=arrayf[i+1][1];
+		 * arrayf[i+1][0]=arrayf[i][0]; arrayf[i+1][1]=arrayf[i][1];
+		 * 
+		 * } }
+		 */
+
+		for (int i = 0; i < array.length; i++) {
+
+		}
+
+		for (int i = 0; i < array.length; i++) {
+
+			for (int j = 0; j < 2; j++) {
+				System.out.print(arrayf[i][j] + " ");
+
+			}
+			System.out.println();
+		}
+
+		br.close();
+
+		bw.close();
+	}
+
+}

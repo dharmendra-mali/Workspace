@@ -1,0 +1,9 @@
+package withoutnewkeyword;
+
+public class Myclass {
+	
+	public Myclass() {
+		System.out.println("constructor is called");
+	}
+
+}

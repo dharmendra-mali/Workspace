@@ -1,0 +1,9 @@
+1587902421321	Rename type 'UserService'
+1587902662344	Rename package 'com.company.spring.demo.repositories'
+1587944688585	Infer generic type arguments
+1587944695460	Infer generic type arguments
+1588067643434	Delete element
+1588067660468	Rename package 'com.company.spring.demo.doa'
+1588067726342	Rename type 'UserResponse'
+1588069000344	Rename type 'ConvertService'
+1588151298110	Rename type 'AddresRepositories'

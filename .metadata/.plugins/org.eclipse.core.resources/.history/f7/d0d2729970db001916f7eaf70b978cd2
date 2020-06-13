@@ -1,0 +1,28 @@
+package sorting;
+ 
+import java.lang.reflect.*;
+public class ReflectionExample {
+
+	static class l{
+	private class p{
+		
+		private void e(){
+			System.out.println("hello");
+		}
+		
+	} 
+	}
+	
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		// TODO Auto-generated method stub
+  String s="<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>";
+ 
+  
+ // s= s.replaceAll("\\<.*?\\>", " ");
+	String [] sss=s.split("\\<.*?\\>");
+
+	System.out.println(s.matches("\\<.*?\\>"));
+		
+	}
+
+}

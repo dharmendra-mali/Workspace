@@ -1,0 +1,23 @@
+package com.example.exception;
+
+public class MyClass2 {
+
+	MyClass1 myClass=new MyClass1();
+	
+	public void mainFun(){
+		int x=-1;
+		try {
+			x=myClass.fun(1);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		
+		System.out.println("number is "+x);
+	}
+	
+	
+	
+}

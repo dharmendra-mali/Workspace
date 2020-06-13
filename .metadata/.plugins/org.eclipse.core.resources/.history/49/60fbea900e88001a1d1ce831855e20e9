@@ -1,0 +1,6 @@
+package com.company.spring.demo.dto;
+
+public class UserResponse {
+	
+
+}

@@ -1,0 +1,26 @@
+package lembda_expration;
+
+import java.util.function.Supplier;
+/**
+ * @author dharmendra.kumar
+ *
+ */
+public class Supplieree {
+
+	public static void main(String[] args) {
+		
+		
+		Supplier s=()->{
+			
+			String []s1={"chunny","bunty","kalu","nelu","pelu"};
+			
+			int x=(int)( Math.random()*4);
+			
+			return s1[x];
+		};
+		
+		System.out.println(s.get());
+
+	}
+
+}

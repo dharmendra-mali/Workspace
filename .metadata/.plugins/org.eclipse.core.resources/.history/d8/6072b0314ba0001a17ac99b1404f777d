@@ -1,0 +1,19 @@
+package withoutnewkeyword;
+
+public class Example {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, CloneNotSupportedException {
+		@SuppressWarnings("rawtypes")
+		Class c=Myclass.class;
+        Myclass myclass= (Myclass) c.newInstance();
+        
+        myclass.setMyId(1);
+        
+		Myclass m2=(Myclass) myclass.clone();
+		
+		System.out.println(myclass.getMyId());
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package withoutnewkeyword;
+import java.lang.reflect.*;;
+public class Example {
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		Class c=Class.forName("Myclass");
+        Myclass myclass= (Myclass) c.newInstance();
+		//Myclass myclass = new Myclass();
+	}
+
+}

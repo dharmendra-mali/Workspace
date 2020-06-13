@@ -1,0 +1,40 @@
+package Randoms;
+
+public class Solutions {
+	
+	
+	
+	public static int[] climbingLeaderboard(int[] scores, int[] alice) {
+        
+        int [] newArray=new int [alice.length];
+        for(int j=0;j<alice.length;j++){
+             int next=1;
+        for(int i=0;i<scores.length;i++){
+             if(alice[j]>scores[i]){
+                 newArray[j]=next;
+             }else{
+                if(alice[j]==scores[i]){
+                    newArray[j]=next;
+                }
+
+             }
+            int x=i+1;
+
+             if(x<scores.length&&scores[i]==scores[x]){
+                 i++;
+             }
+              next++;
+
+        }
+        if(alice[j]<scores[scores.length-1]){
+            
+            newArray[j]=next;
+        }
+        }
+
+return newArray;
+
+}
+	
+
+}

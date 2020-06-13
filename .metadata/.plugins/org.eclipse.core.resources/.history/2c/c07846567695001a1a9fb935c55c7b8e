@@ -1,0 +1,8 @@
+package com.java.CallUserApi.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="User",url="localhost:8080")
+public interface UserServices {
+
+}

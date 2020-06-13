@@ -1,0 +1,5 @@
+package com.java.CallUserApi.service;
+
+public interface UserServices {
+
+}

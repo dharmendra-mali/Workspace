@@ -1,0 +1,9 @@
+127.0.0.1 - - [21/Jan/2019:14:30:45 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:30:46 +0530] "GET /spring-rest-demo/ HTTP/1.1" 200 208
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:30:58 +0530] "GET /spring-rest-demo/ HTTP/1.1" 200 208
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:31:11 +0530] "GET /spring-rest-demo/api/student HTTP/1.1" 200 142
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:33:15 +0530] "GET /spring-rest-demo/api/student/0 HTTP/1.1" 200 56
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:33:21 +0530] "GET /spring-rest-demo/api/student/999 HTTP/1.1" 404 90
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:35:57 +0530] "GET /spring-rest-demo/test/hello HTTP/1.1" 200 11
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:36:00 +0530] "GET /spring-rest-demo/api/student HTTP/1.1" 200 142
+0:0:0:0:0:0:0:1 - - [21/Jan/2019:14:36:28 +0530] "GET /spring-rest-demo/api/student HTTP/1.1" 200 142

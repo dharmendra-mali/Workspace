@@ -1,0 +1,11 @@
+package com.tavant.bhawan.models;
+
+import javax.persistence.Entity;
+
+@Entity
+public class User {
+
+	
+	int user_Id;
+	
+}

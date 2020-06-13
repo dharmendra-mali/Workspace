@@ -1,0 +1,10 @@
+package com.example.exception;
+
+public class MyException extends RuntimeException {
+	public MyException(String str) {
+	
+		super(str);
+		// TODO Auto-generated constructor stub
+	}
+
+}

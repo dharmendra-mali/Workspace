@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<!-- for car interface look up method  -->
+	<bean id="car" class="lockupmethods.Car">
+		<lookup-method  name="myCarEngine" bean="Engine"/>
+	</bean>
+<bean id="Engine" class="lockupmethods.Engine">
+<property name="EngineName" value="Audi"/>
+</bean>
+
+<!-- for Bus abstract look up method  -->
+	<bean id="bus" class="lockupmethods.Bus">
+		<lookup-method  name="myBusEngine" bean="BusEngine"/>
+	</bean>
+<bean id="BusEngine" class="lockupmethods.Engine">
+<property name="EngineName" value="TataTruck"/>
+</bean>
+
+
+<!-- for Truck  look up method  -->
+	<bean id="truck" class="lockupmethods.Truck">
+		<lookup-method  name="myTruckEngine" bean="TruckEngine"/>
+	</bean>
+<bean id="TruckEngine" class="lockupmethods.Engine">
+<property name="EngineName" value="Banzi"/>
+</bean>
+
+</beans>

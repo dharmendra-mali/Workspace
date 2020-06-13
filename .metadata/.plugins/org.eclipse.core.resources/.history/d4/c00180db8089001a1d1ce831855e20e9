@@ -1,0 +1,5 @@
+package com.company.spring.demo.exception;
+
+public class UserErrorRespons {
+
+}

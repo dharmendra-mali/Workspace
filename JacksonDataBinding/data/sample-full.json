@@ -1,0 +1,15 @@
+{
+	"id":832,
+	"firstName": "Dharmendra",
+	"lastName": "Kumar",
+	"active": true,
+	"address": {
+		"street": "100 Main St",
+		"city": "koramangala",
+		"state": "karnataka",
+		"zip": "560047",
+		"country": "IND"
+	},
+	"languages" : ["Java", "C#", "Python", "Javascript"],
+	 "compny":"Tavant Tech PTV."
+}

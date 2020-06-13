@@ -1,0 +1,5 @@
+package com.tavant.bhawan.models;
+
+public class User {
+
+}

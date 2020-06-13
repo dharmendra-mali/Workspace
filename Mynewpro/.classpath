@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/IBM Data Server Driver for JDBC and SQLJ (JDBC 4.0) Default"/>
+	<classpathentry kind="lib" path="C:/Users/dharmendra.kumar/Downloads/mysql-8.0.19-winx64.zip"/>
+	<classpathentry kind="lib" path="D:/workspace/MyConnactionTest/mysql-connector-java-8.0.13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

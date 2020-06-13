@@ -1,0 +1,51 @@
+package com.company.spring.demo.dto;
+
+import java.util.List;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.company.spring.demo.models.User;
+
+public class UserResponse extends ResponseEntity<User> {
+	
+	boolean success;
+	List<User> data;
+	
+	public UserResponse(HttpStatus status) {
+		super(status);
+		
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
+
+	public List<User> getData() {
+		return data;
+	}
+
+	public void setData(List<User> data) {
+		this.data = data;
+	}
+	
+
+	public UserResponse(HttpStatus status, boolean success) {
+		super(status);
+		this.success = success;
+	}
+
+	public UserResponse(HttpStatus status, boolean success, List<User> data) {
+		super(status);
+		this.success = success;
+		this.data = data;
+	}
+
+	
+	
+
+}

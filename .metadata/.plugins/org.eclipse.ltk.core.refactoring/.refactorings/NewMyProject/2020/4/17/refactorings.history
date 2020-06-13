@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;spring_sample/src/test&apos;&#x0D;&#x0A;- Original project: &apos;NewMyProject&apos;&#x0D;&#x0A;- Destination element: &apos;spring_sample/src/test&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.dharmendra.spring.BassballCoach.java&#x0D;&#x0A;     com.dharmendra.spring.TrackCoach.java&#x0D;&#x0A;     com.dharmendra.spring.Coach.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=spring_sample/src&lt;test" element1="/src&lt;com.dharmendra.spring{BassballCoach.java" element2="/src&lt;com.dharmendra.spring{TrackCoach.java" element3="/src&lt;com.dharmendra.spring{Coach.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1587481948651" units="3" version="1.0"/>
+</session>

@@ -1,0 +1,49 @@
+package data_structure;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class DemoArray {
+
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) throws IOException {
+
+		FileReader fileReader = new FileReader("D:\\ws\\demo.txt");
+
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+		String line = bufferedReader.readLine();
+		System.out.println(line);
+		int number = Integer.valueOf(line);
+		String[] s = bufferedReader.readLine().split(" ");
+		int[] arrayOfnum = new int[number];
+
+		for (int i = 0; i < s.length; i++) {
+System.out.println(s[i]);
+			arrayOfnum[i] = Integer.valueOf(s[i]);
+
+		}
+
+		line = bufferedReader.readLine();
+		int num = Integer.valueOf(line);
+		int[] arrnum = new int[num];
+		line=bufferedReader.readLine();
+		int k=0;
+		while(line!=null){
+			arrnum[k]=Integer.valueOf(line);
+			
+		}
+
+		
+		for (int i = 0; i < arrayOfnum.length; i++) {
+
+			System.out.print(arrayOfnum[i]+" ");
+
+		}
+		
+	}
+
+}

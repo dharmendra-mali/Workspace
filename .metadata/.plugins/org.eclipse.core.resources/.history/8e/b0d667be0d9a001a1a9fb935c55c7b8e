@@ -1,0 +1,17 @@
+
+public class ABImplemention implements A ,B{
+
+	@Override
+	public void add() {
+		System.out.println("hi");
+		
+	}
+	public static void main(String[] args) {
+		ABImplemention abImplemention = new ABImplemention();
+		abImplemention.add();
+		A a=new ABImplemention();
+		B b = new ABImplemention();
+		
+	}
+
+}

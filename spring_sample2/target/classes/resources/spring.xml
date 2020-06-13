@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	
+	<bean id="empcode" class="main.EmpCode">
+		
+	</bean>
+	
+	<bean id="emp" class="main.Emp">
+	<property name ="name" value="2019"></property>
+	<property name ="email" value="2019"></property>
+    <property name ="empCode" ref="empcode"></property>	
+	</bean>
+	
+
+</beans>

@@ -1,0 +1,12 @@
+package Perentchiled;
+
+public class Beta {
+	
+	public void betaFun() {
+		
+		
+		System.out.println("Beta class function");
+		
+		}
+
+}

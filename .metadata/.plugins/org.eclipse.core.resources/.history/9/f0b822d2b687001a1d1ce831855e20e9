@@ -1,0 +1,16 @@
+package com.company.spring.demo.services;
+
+import com.company.spring.demo.models.User;
+
+public interface UserService {
+
+	public String getAllUser();
+
+	public void createUser(User user);
+
+	public User getUserById(long userId);
+
+	public void deleteUser(long userId);
+
+	public void updateUser(User user, long userId);
+}

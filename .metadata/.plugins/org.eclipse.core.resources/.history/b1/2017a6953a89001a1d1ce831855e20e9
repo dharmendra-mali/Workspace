@@ -1,0 +1,46 @@
+package com.company.spring.demo.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.company.spring.demo.dto.UserDto;
+import com.company.spring.demo.models.User;
+import com.company.spring.demo.repositories.UserRepositories;
+
+@Service
+public class UserServiceImp implements UserService {
+
+	@Autowired
+	private UserRepositories userRepositories;
+  
+	@Autowired
+	private ConverterService converterService;
+	
+	public List<User> getAllUser() {
+		return userRepositories.findAll();
+
+	}
+
+	public void createUser(User user) {
+		userRepositories.save(user);
+	}
+
+	public UserDto getUserById(long userId) {
+       User tempUser=userRepositories.findById(userId).get();
+		return ;
+
+	}
+
+	public void deleteUser(long userId) {
+		userRepositories.deleteById(userId);
+
+	}
+
+	public void updateUser(User user, long userId) {
+		user.setUserId(userId);
+		userRepositories.save(user);
+
+	}
+}

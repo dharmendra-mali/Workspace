@@ -1,0 +1,14 @@
+package withoutnewkeyword;
+
+public class Example {
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		@SuppressWarnings("rawtypes")
+		Class c=Myclass.class;
+        @SuppressWarnings("unused")
+		Myclass myclass= (Myclass) c.newInstance();
+        
+		
+	}
+
+}

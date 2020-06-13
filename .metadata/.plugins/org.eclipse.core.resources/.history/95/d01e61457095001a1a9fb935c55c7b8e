@@ -1,0 +1,12 @@
+package com.java.CallUserApi.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserList {
+
+	private List<UserDto> users;
+	public UserList() {
+		users= new ArrayList<>();
+	}
+}

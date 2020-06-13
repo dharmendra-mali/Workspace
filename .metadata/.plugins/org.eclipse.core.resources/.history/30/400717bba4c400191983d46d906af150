@@ -1,0 +1,13 @@
+package Perentchiled;
+
+public class Delta {
+	
+	
+	public void deltaFun() {
+		
+		
+		System.out.println("delta class function");
+		
+		}
+
+}

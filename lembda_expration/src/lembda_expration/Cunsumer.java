@@ -1,0 +1,16 @@
+package lembda_expration;
+
+import java.util.function.Consumer;
+
+public class Cunsumer {
+
+	
+	public static void main(String[] args) {
+		
+		
+		Consumer<String> cou=str->System.out.println(str.substring(0, 3));
+		cou.accept("dharmenda");
+		
+		
+	}
+}

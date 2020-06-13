@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean id="engine1" class="com.main.Engine">
+		<property name="modleNo" value="2017" />
+	</bean>
+	<bean id="engine2" class="com.main.Engine">
+		<property name="modleNo" value="2018" />
+	</bean>
+	<bean id="engine3" class="com.main.Engine">
+		<property name="modleNo" value="2019" />
+	</bean>
+
+
+	<bean id="TFA" class="com.main.TestForArray">
+		<property name="engine" >
+			<list>
+				<ref bean="engine1" />
+				<ref bean="engine2" />
+				<ref bean="engine3" />
+
+
+
+			</list>
+
+		</property>
+
+
+	</bean>
+
+</beans>

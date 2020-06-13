@@ -1,0 +1,15 @@
+package com.java.CallUserApi.service;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.company.spring.demo.dto.UserDto;
+
+@FeignClient(name="User",url="localhost:8080")
+public interface UserServiceProxy {
+
+	@GetMapping("/api/v1/user")
+	public List<UserDto> getAllUser();
+}

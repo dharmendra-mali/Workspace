@@ -1,0 +1,10 @@
+
+public class ABImplemention implements A ,B{
+
+	@Override
+	public void add() {
+		System.out.println("hi");
+		
+	}
+
+}

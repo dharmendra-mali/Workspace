@@ -1,0 +1,19 @@
+package Example;
+
+import java.util.ArrayDeque;
+import java.util.Scanner;
+
+public class Silution {
+
+	private static Scanner sc;
+
+	public static void main(String[] args) {
+        
+		ArrayDeque<Integer> deq=new ArrayDeque<>();
+		deq.addLast(1);
+		deq.addLast(2);
+		System.out.println(deq);
+        
+	}
+
+}
